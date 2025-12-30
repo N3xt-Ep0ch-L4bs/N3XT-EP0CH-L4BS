@@ -294,10 +294,10 @@ export default function LandingPage() {
 
         <div className="mt-12 flex flex-wrap justify-center gap-13 max-w-[1000px] mx-auto">
           {[
-            {image: {Item4}, title: "Expert Team", content: "Seasoned professionals with deep expertise in blockchain technology and decentralized systems."},
-            {image: {Item7}, title: "Future-Proof Solutions", content: "Building scalable, secure, and sustainable platforms designed for tomorrow's digital landscape."},
-            {image: {Item6}, title: "Transparent & Secure", content: "Commitment to open development, rigorous security audits, and ethical practices in all our projects."},
-            {image: {Item5}, title: "Collaborative Partnership", content: "We work closely with clients, ensuring their vision is realized with meticulous attention to detail and shared success."},
+            {image: Item4, title: "Expert Team", content: "Seasoned professionals with deep expertise in blockchain technology and decentralized systems."},
+            {image: Item7, title: "Future-Proof Solutions", content: "Building scalable, secure, and sustainable platforms designed for tomorrow's digital landscape."},
+            {image: Item6, title: "Transparent & Secure", content: "Commitment to open development, rigorous security audits, and ethical practices in all our projects."},
+            {image: Item5, title: "Collaborative Partnership", content: "We work closely with clients, ensuring their vision is realized with meticulous attention to detail and shared success."},
           ].map((item, i) => (
             <div key={i} className="w-[210px] text-center">
               <img src={item.image} className="w-11 h-11 mx-auto" />

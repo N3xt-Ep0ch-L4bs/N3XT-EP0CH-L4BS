@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Logo from "../assets/logo.png";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -17,7 +18,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center gap-[6px]">
             <img
-              src="src/assets/logo.png"
+              src={Logo}
               alt="Next Epoch Labs Logo"
               className="w-[50px] h-[30px]"
             />

@@ -8,6 +8,16 @@ import Nanya from "../assets/nanya.jpg";
 import Tomcrown from "../assets/tomcrown.jpg";
 import Uchiha from "../assets/uchiha.jpg";
 import Navbar from "../components/navbar";
+import Suiswap from "../assets/suiswap.png";
+import Medlock from "../assets/medlock.png";
+import Backstage from "../assets/backstage.png";
+import Item1 from "../assets/item1.png";
+import Item2 from "../assets/item2.png";
+import Item3 from "../assets/item3.png";
+import Item4 from "../assets/item4.png";
+import Item5 from "../assets/item5.png";
+import Item6 from "../assets/item6.png";
+import Item7 from "../assets/item7.png";
 import {
   Twitter,
   Github,
@@ -175,9 +185,9 @@ export default function LandingPage() {
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { img: "src/assets/item2.png", title: "Decentralized Protocols", text: "Crafting robust and secure blockchain protocols that serve as the backbone for future decentralized applications." },
-              { img: "src/assets/item1.png", title: "DeFi & NFT Platforms", text: "Developing innovative financial tools and unique digital asset marketplaces that redefine ownership and value." },
-              { img: "src/assets/item3.png", title: "Metaverse & Identity", text: "Building immersive virtual environments and secure digital identity solutions for the next evolution of human interaction." },
+              { : {Item2}, title: "Decentralized Protocols", text: "Crafting robust and secure blockchain protocols that serve as the backbone for future decentralized applications." },
+              { img: {Item1}, title: "DeFi & NFT Platforms", text: "Developing innovative financial tools and unique digital asset marketplaces that redefine ownership and value." },
+              { img: {Item3}, title: "Metaverse & Identity", text: "Building immersive virtual environments and secure digital identity solutions for the next evolution of human interaction." },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -220,9 +230,9 @@ export default function LandingPage() {
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { img: "src/assets/suiswap.png", title: "SuiWall Swap" },
-              { img: "src/assets/medlock.png", title: "Med Lock" },
-              { img: "src/assets/backstage.png", title: "Backstage" },
+              { img: {Suiswap}, title: "SuiWall Swap" },
+              { img: {Medlock}, title: "Med Lock" },
+              { img: {Medlock}, title: "Backstage" },
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -284,10 +294,10 @@ export default function LandingPage() {
 
         <div className="mt-12 flex flex-wrap justify-center gap-13 max-w-[1000px] mx-auto">
           {[
-            {image: "src/assets/item4.png", title: "Expert Team", content: "Seasoned professionals with deep expertise in blockchain technology and decentralized systems."},
-            {image: "src/assets/item7.png", title: "Future-Proof Solutions", content: "Building scalable, secure, and sustainable platforms designed for tomorrow's digital landscape."},
-            {image: "src/assets/item6.png", title: "Transparent & Secure", content: "Commitment to open development, rigorous security audits, and ethical practices in all our projects."},
-            {image: "src/assets/item5.png", title: "Collaborative Partnership", content: "We work closely with clients, ensuring their vision is realized with meticulous attention to detail and shared success."},
+            {image: {Item4}, title: "Expert Team", content: "Seasoned professionals with deep expertise in blockchain technology and decentralized systems."},
+            {image: {Item7}, title: "Future-Proof Solutions", content: "Building scalable, secure, and sustainable platforms designed for tomorrow's digital landscape."},
+            {image: {Item6}, title: "Transparent & Secure", content: "Commitment to open development, rigorous security audits, and ethical practices in all our projects."},
+            {image: {Item5}, title: "Collaborative Partnership", content: "We work closely with clients, ensuring their vision is realized with meticulous attention to detail and shared success."},
           ].map((item, i) => (
             <div key={i} className="w-[210px] text-center">
               <img src={item.image} className="w-11 h-11 mx-auto" />

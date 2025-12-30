@@ -19,26 +19,24 @@ const AnimatedLines = () => {
   const verticalCount = 8;
   const colors = ["#3B82F6", "#6366F1", "#06B6D4", "#0EA5E9", "#F59E0B", "#EF4444", "#10B981"];
 
-  // Horizontal lines
   const hLines = [...Array(horizontalCount)].map((_, i) => ({
     top: 10 + i * 10 + "%",
   }));
 
-  // Vertical lines
   const vLines = [...Array(verticalCount)].map((_, i) => ({
     left: 10 + i * 10 + "%",
   }));
 
-  // Dots at intersections
-  const dots = hLines.flatMap((h, i) =>
-    vLines.map((v, j) => ({
-      top: h.top,
-      left: v.left,
-      color: colors[Math.floor(Math.random() * colors.length)],
-      size: 3 + Math.random() * 3,
-      duration: 2 + Math.random() * 3,
-    }))
-  );
+  const dots = hLines.flatMap((h, _i) =>
+  vLines.map((v, _j) => ({
+    top: h.top,
+    left: v.left,
+    color: colors[Math.floor(Math.random() * colors.length)],
+    size: 3 + Math.random() * 3,
+    duration: 2 + Math.random() * 3,
+  }))
+);
+
 
   return (
     <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">

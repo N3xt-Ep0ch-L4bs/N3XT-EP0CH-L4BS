@@ -197,7 +197,7 @@ export default function LandingPage() {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="bg-[#F5D8A0] p-8 rounded-xl text-left hover:-translate-y-1 transition"
               >
-                <img src={item.img} className="w-10 h-10 mb-2" />
+                <img src={item.img} className="w8 h-8 mb-2" />
                 <h3 className="text-3xl font-bold text-[#000000] mb-2">{item.title}</h3>
                 <p className="text-gray-700">{item.text}</p>
               </motion.div>
@@ -300,7 +300,7 @@ export default function LandingPage() {
             {img: Item5, title: "Collaborative Partnership", content: "We work closely with clients, ensuring their vision is realized with meticulous attention to detail and shared success."},
           ].map((item, i) => (
             <div key={i} className="w-[210px] text-center">
-              <img src={item.img} className="w-11 h-11 mx-auto" />
+              <img src={item.img} className="w-9 h-8 mx-auto" />
               <h4 className="font-bold text-2xl text-gray-900 mb-2">
                 {item.title}
               </h4>
